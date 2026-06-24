@@ -1,0 +1,84 @@
+# ── Python 运行时缓存 ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+.pytest_cache/
+*.egg-info/
+
+# ── 核心数据沙箱（严禁推送 AF3 解压临时文件） ──
+temp_workspace/
+
+# ── 虚拟环境与本地配置 ──
+venv/
+env/
+.env
+.venv
+ENV/
+env.bak/
+
+# ── Streamlit 配置与密钥 ──
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ── AI API 密钥文件 ──
+*.apikey
+credentials.json
+secrets.json
+
+# ── IDE / 编辑器配置 ──
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# ── 操作系统杂项 ──
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── 构建与分发包 ──
+dist/
+build/
+*.egg
+*.whl
+
+# ── 测试覆盖率 ──
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ── 临时与日志文件 ──
+*.tmp
+*.log
+*.bak
+*.orig
+
+# ── Jupyter Notebook ──
+.ipynb_checkpoints/
+*.ipynb
+
+# ── 压缩包（防止用户误上传 AF3 数据） ──
+*.zip
+*.gz
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ── Python 类型检查缓存 ──
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/

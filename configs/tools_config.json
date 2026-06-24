@@ -1,0 +1,33 @@
+{
+    "app": {
+        "name": "Wissen AF3 Explorer",
+        "version": "3.1",
+        "description": "AlphaFold 3 结果一键全景解析平台"
+    },
+    "tools": [
+        { "id": "global_basic",      "name": "全局基础分析",       "category": "global_analysis",    "icon": "🧬", "desc": "一键运行质量检查、湿实验评估、口袋探测三大基础分析", "enabled": true },
+        { "id": "basic_qc",          "name": "基础质量检查",       "category": "quality_assessment", "icon": "📊", "desc": "解析 mmCIF 结构文件，提取 pLDDT 置信度分数并进行分级统计", "enabled": true },
+        { "id": "pae_analysis",      "name": "PAE 误差矩阵分析",   "category": "quality_assessment", "icon": "📐", "desc": "可视化 AlphaFold 3 预测的空间位置误差 (PAE) 热力图", "enabled": true },
+        { "id": "wetlab_profiler",   "name": "湿实验性质评估",     "category": "protein_properties", "icon": "🧪", "desc": "评估靶点蛋白在体外表达纯化实验中的基本理化性质", "enabled": true },
+        { "id": "pocket_detect",     "name": "成药口袋探测",       "category": "pocket_detection",   "icon": "🔍", "desc": "基于网格法的蛋白质表面成药结合口袋探测与 3D 可视化", "enabled": true },
+        { "id": "fpocket_detect",    "name": "fpocket 高精度口袋", "category": "pocket_detection",   "icon": "🎯", "desc": "调用 fpocket C 引擎进行高精度几何口袋扫描", "enabled": true },
+        { "id": "castp_bridge",      "name": "PrankWeb 口袋预测",   "category": "pocket_detection",   "icon": "🔗", "desc": "PrankWeb REST API 全自动蛋白口袋预测，兼容 CASTp 手动桥接回退", "enabled": true },
+        { "id": "foldseek_search",   "name": "Foldseek 结构检索",  "category": "structure_search",   "icon": "🔬", "desc": "将本地结构发送至 EBI Foldseek 服务器进行 PDB 全库结构同源检索", "enabled": true },
+        { "id": "pfam_annotator",    "name": "Pfam 结构域注释",    "category": "functional_anno",    "icon": "🏷", "desc": "通过 EBI HMMER API 进行 Pfam 蛋白结构域快速注释", "enabled": true },
+        { "id": "uniprot_annotator", "name": "UniProt 功能注释",   "category": "functional_anno",    "icon": "🌐", "desc": "通过 UniProt REST API 检索蛋白功能注释与 GO 术语", "enabled": true },
+        { "id": "esm_atlas",         "name": "ESMFold 结构预测",   "category": "functional_anno",    "icon": "🧠", "desc": "ESM Atlas API 全自动蛋白语言模型结构预测与置信度评估", "enabled": true },
+        { "id": "icn3d_bridge",      "name": "iCn3D 3D 可视化",   "category": "interaction_viz",    "icon": "🔮", "desc": "NCBI iCn3D 嵌入式 3D 分子查看器，支持 UniProt ID 自动加载", "enabled": true },
+        { "id": "string_ppi",        "name": "STRING 互作网络",   "category": "interaction_viz",    "icon": "🕸", "desc": "STRING REST API 全自动蛋白-蛋白互作网络检索与可视化", "enabled": true },
+        { "id": "ai_report",         "name": "AI 一键综合报告",    "category": "reports",            "icon": "🤖", "desc": "汇总所有已完成模块的分析数据与参数，借助大语言模型生成综合报告", "enabled": true }
+    ],
+    "categories": [
+        { "id": "global_analysis",    "name": "全局基础分析",   "icon": "🚀", "color": "#6366f1", "desc": "一键运行多项核心基础分析" },
+        { "id": "quality_assessment", "name": "结构质量评估",   "icon": "📊", "color": "#3b82f6", "desc": "pLDDT 置信度分级与空间误差分析" },
+        { "id": "protein_properties", "name": "蛋白性质评估",   "icon": "🧪", "color": "#06b6d4", "desc": "理化性质与体外表达可行性评估" },
+        { "id": "pocket_detection",   "name": "成药口袋探测",   "icon": "🎯", "color": "#8b5cf6", "desc": "成药结合口袋识别与 3D 可视化" },
+        { "id": "structure_search",   "name": "结构相似性检索", "icon": "🔬", "color": "#f59e0b", "desc": "PDB 全库结构同源性检索比对" },
+        { "id": "functional_anno",    "name": "蛋白功能注释",   "icon": "🏷", "color": "#10b981", "desc": "结构域、功能位点与语言模型嵌入分析" },
+        { "id": "interaction_viz",    "name": "互作与3D可视化", "icon": "🔮", "color": "#ef4444", "desc": "蛋白互作网络与交互式 3D 结构可视" },
+        { "id": "reports",            "name": "AI 综合报告",    "icon": "📝", "color": "#f59e0b", "desc": "大语言模型驱动的多工具综合分析报告" }
+    ]
+}
